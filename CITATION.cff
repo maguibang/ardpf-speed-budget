@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript below."
+title: "Along-Track Speed Budget Governs Formation Error in Saturated UAV Swarms: Closed-Form Corner and Curvature Criteria"
+abstract: >-
+  MATLAB implementation of an ARD-PF (attractive-repulsive distance-based potential field)
+  leader-follower swarm simulator, a reduced-order single-follower model that reproduces the
+  full N-body simulation to 1.5%, two closed-form error terms (a corner-accumulation factor
+  derived from relaxation along a conserved parabola, and a curvature term exact for constant
+  turn rate), a three-term error decomposition, and a self-checking acceptance suite that
+  re-derives every numerical claim in the manuscript.
+type: software
+authors:
+  - family-names: Ma
+    given-names: Guibang
+    orcid: "https://orcid.org/0009-0004-3735-5363"
+    affiliation: "School of Information Engineering, Shenyang University of Chemical Technology, Shenyang 110142, China"
+  - family-names: Zhang
+    given-names: Danni
+    affiliation: "School of Information Engineering, Shenyang University of Chemical Technology, Shenyang 110142, China"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-15"
+keywords:
+  - UAV swarm
+  - formation control
+  - artificial potential field
+  - actuator saturation
+  - closed-form criterion
+  - delay stability
+# Uncomment and fill in once the repository exists:
+# repository-code: "https://github.com/<user>/<repo>"
+# doi: "10.5281/zenodo.<xxxxxxx>"

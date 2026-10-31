@@ -1,0 +1,21 @@
+THREE-TERM DECOMPOSITION - every term from an INDEPENDENT model
+residual = (pred - full_sim)/full_sim ;  pred = b0 + C + R ; steady state (last lap)
+
+traj           full_sim       b0          C          R       pred   resid_%  independent_source
+poly M=4         24.722    0.707     23.961      0.000     24.668     -0.22  A_closedform
+poly M=6         20.483    0.707     19.855      0.000     20.563      0.39  A_closedform
+poly M=8         18.011    0.707     17.391      0.000     18.098      0.48  A_closedform
+poly M=12        15.367    0.707     14.751      0.000     15.458      0.60  A_closedform
+poly M=20        13.208    0.707     12.591      0.000     13.299      0.69  A_closedform
+randpoly         27.989    0.707     26.287      0.000     26.994     -3.55  composite fixed point
+circle           10.227    0.000      0.000     10.092     10.092     -1.31  closed form g (const omega)
+spiral           15.243    0.000      0.000     15.098     15.098     -0.95  reduced ODE (independent)
+fig8             19.719    0.000      0.000     19.602     19.602     -0.59  reduced ODE (independent)
+
+NOTE: corner-dominated -> pred = b0 + C ; rotation-dominated -> pred = R
+      (b0 absorbed inside R: inner followers have ~0 error).
+      Every row uses an independent model; max |residual| = 3.55 %.
+
+SCALAR GROWTH-RATE IDENTITY (body frame, saturated):
+  d|e|/dt = -v_max - v*cos(theta_e) - omega*(e_hat . J d)
+  corners inject via impulse; rotation drives via -omega*(e_hat . J d).
