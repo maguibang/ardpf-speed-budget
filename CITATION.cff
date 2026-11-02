@@ -16,6 +16,7 @@ authors:
     affiliation: "School of Information Engineering, Shenyang University of Chemical Technology, Shenyang 110142, China"
   - family-names: Zhang
     given-names: Danni
+    orcid: "https://orcid.org/0009-0007-6766-2964"
     affiliation: "School of Information Engineering, Shenyang University of Chemical Technology, Shenyang 110142, China"
 license: MIT
 version: "1.0.0"
@@ -27,6 +28,5 @@ keywords:
   - actuator saturation
   - closed-form criterion
   - delay stability
-# Uncomment and fill in once the repository exists:
-# repository-code: "https://github.com/<user>/<repo>"
-# doi: "10.5281/zenodo.<xxxxxxx>"
+repository-code: "https://github.com/maguibang/ardpf-speed-budget"
+doi: "10.5281/zenodo.23880123"
